@@ -1,0 +1,10 @@
+{
+  "Id": "DERAILDigital",
+  "DisplayName": "DERAIL Digital",
+  "Author": "Cybex",
+  "Version": "0.0.0",
+  "AssemblyName": "DERAILDigital.dll",
+  "EntryMethod": "Cybex.DERAILDigital.Main.Load",
+  "HomePage": "",
+  "Repository": ""
+}
