@@ -18,6 +18,9 @@ namespace Cybex.DERAILDigital
 	{
 		private static AssetBundle assets;
 
+		public static Action ControllerInstanceCreated;
+		public static void OnControllerInstanceCreated() { ControllerInstanceCreated?.Invoke(); }
+
 		public static void Init()
 		{
 			// not strictly necessary

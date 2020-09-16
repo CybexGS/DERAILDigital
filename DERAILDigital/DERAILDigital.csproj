@@ -64,9 +64,6 @@
   <ItemGroup>
     <None Include="Info.json" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include=".gitignore" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>mkdir "$(DVInstallPath)Mods\$(SolutionName)\"
