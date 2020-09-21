@@ -42,11 +42,15 @@ namespace Cybex.DERAILDigital
 				switch (car.name.Split('(')[0])
 				{
 					case "LocoDiesel":
-						go = GameObject.Instantiate(assets.LoadAsset<GameObject>("DS_DE6"), car.transform);
+						go = GameObject.Instantiate(assets.LoadAsset<GameObject>("DS_DE6"), car.interior);
 						go.GetComponentInChildren<TabletDockingStation>().trainCar = car;
 						break;
 					case "loco_621":
-						go = GameObject.Instantiate(assets.LoadAsset<GameObject>("DS_DE2"), car.transform);
+						go = GameObject.Instantiate(assets.LoadAsset<GameObject>("DS_DE2"), car.interior);
+						go.GetComponentInChildren<TabletDockingStation>().trainCar = car;
+						break;
+					case "loco_steam_H":
+						go = GameObject.Instantiate(assets.LoadAsset<GameObject>("DS_STM"), car.interior);
 						go.GetComponentInChildren<TabletDockingStation>().trainCar = car;
 						break;
 					default:
